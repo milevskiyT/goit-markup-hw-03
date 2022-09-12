@@ -26,9 +26,6 @@ body {
 *::before *::after {
   box-sizing: border-box;
 }
-* {
-  outline: 1px solid tomato;
-}
 
 ul {
   list-style: none;
