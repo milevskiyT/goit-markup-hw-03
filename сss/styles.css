@@ -21,17 +21,15 @@ body {
   background-color: var(--primary-background-color);
 }
 /* сховав точки */
-* {
-}
+
 *::before *::after {
   box-sizing: border-box;
-}
-* {
 }
 
 ul {
   list-style: none;
 }
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -126,7 +124,7 @@ ul {
   letter-spacing: 0.03em;
   border-radius: 4px;
   color: var(--primary-text-color);
-  border: 0px;
+  border: none;
   padding: 6px 22px;
   cursor: pointer;
 }
@@ -200,11 +198,9 @@ ul {
   padding-bottom: 200px;
 }
 .hero-title {
-  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
@@ -213,7 +209,7 @@ ul {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-background-color);
   background-color: var(--logo-link-color);
@@ -258,6 +254,9 @@ ul {
   width: calc((100% - 60px) / 3);
   display: flex;
 }
+.section-list {
+  padding-bottom: 94;
+}
 
 .section-tittle {
   font-weight: 700;
@@ -280,13 +279,16 @@ ul {
   width: calc((100% - 90px) / 4);
   background-color: var(--primary-background-color);
 }
+.borderteam {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-workers:not(:first-child) {
   margin-left: 30px;
 }
 .team-work {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
   text-align: center;
   font-size: 16px;
   line-height: 1.2;
@@ -299,7 +301,6 @@ ul {
   line-height: 1.2;
   color: var(--primary-text-color);
   text-align: center;
-  margin-top: 30px;
 }
 
 /* /* cursor зі значенням pointer. */
@@ -340,7 +341,6 @@ address {
 }
 
 .footerbg {
-  padding-left: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-color);
@@ -355,7 +355,6 @@ address {
 .button {
   display: flex;
   justify-content: center;
-  cursor: pointer;
 }
 .button :not(:last-child) {
   margin-right: 9px;
@@ -371,18 +370,26 @@ address {
 .foto-link {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 34px;
+  margin-top: 50px;
+  justify-content: space-between;
+  gap: 30px;
+}
+.flex-elements {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-elements {
-  margin-right: 30px;
-  margin-top: 30px;
   background-color: var(--primary-background-color);
 }
 
-.flex-elements:nth-child(3n) {
+.flex-elements li:nth-child(3n) {
   margin-right: 0;
 }
+.flex-elements li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .logoclas {
   margin-bottom: 20px;
 }
@@ -390,8 +397,16 @@ address {
   margin-top: 9px;
 }
 .border-foto {
-  border-width: 1px;
-  border-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-porfolio);
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--border-porfolio);
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--border-porfolio);
+
   border-color: var(--border-porfolio);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -401,3 +416,9 @@ address {
 .border-foto {
   display: block;
 }
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+/* /testststststststs */
