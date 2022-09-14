@@ -179,6 +179,9 @@ ul {
 .footer-nav .footer-link:focus {
   color: var(--logo-link-color);
 }
+.footer-nav :not(:first-child) {
+  margin-top: 9px;
+}
 .footer-link {
   font-size: 14px;
   line-height: 1.7;
@@ -255,7 +258,7 @@ ul {
   display: flex;
 }
 .section-list {
-  padding-bottom: 94;
+  padding-bottom: 94px;
 }
 
 .section-tittle {
@@ -371,25 +374,12 @@ address {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
-  justify-content: space-between;
   gap: 30px;
-}
-.flex-elements {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .flex-elements {
   background-color: var(--primary-background-color);
 }
-
-.flex-elements li:nth-child(3n) {
-  margin-right: 0;
-}
-.flex-elements li:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
 .logoclas {
   margin-bottom: 20px;
 }
