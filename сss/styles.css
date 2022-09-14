@@ -389,14 +389,10 @@ address {
 .border-foto {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--border-porfolio);
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: var(--border-porfolio);
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: var(--border-porfolio);
-
   border-color: var(--border-porfolio);
   padding-top: 20px;
   padding-bottom: 20px;
