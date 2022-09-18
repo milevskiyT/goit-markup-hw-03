@@ -85,9 +85,10 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.nav-site {
+.icon-marg {
   margin-right: 50px;
 }
+
 .site-nav .link {
   font-weight: 500;
   font-size: 14px;
@@ -195,7 +196,15 @@ ul {
 
 /* hero section */
 .hero {
-  background-color: var(--hero-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/work.png);
+  max-width: 1600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-size: auto;
+  margin: auto;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -242,6 +251,7 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 .peculiarities-list {
   color: var(--secondary-text);
@@ -408,3 +418,7 @@ img {
   max-width: 100%;
 }
 /* /testststststststs */
+.footerbg {
+  display: flex;
+  align-items: baseline;
+}
