@@ -34,7 +34,6 @@
 .icon-list {
   width: 270px;
   height: 120px;
-  border: 1px solid red;
   background-color: #f5f4fa;
 }
 .antena {
@@ -83,7 +82,8 @@
   background-color: var(--primary-background-color);
   fill: var(--color-mini-iconrgbargba);
 }
-.client-icon:hover {
+.client-icon:hover,
+.client-icon:focus {
   fill: rgba(33, 150, 243, 1);
 }
 .client-border:hover {
@@ -104,4 +104,53 @@
   line-height: 1.14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.container-foter {
+  display: flex;
+  align-items: baseline;
+}
+
+.conect {
+  margin-left: 70px;
+}
+.conect-list {
+  margin-top: 20px;
+  gap: 10px;
+}
+.icon-foter {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  fill: var(--primary-background-color);
+}
+.icon-foter:hover,
+.icon-foter:focus {
+  background-color: rgba(33, 150, 243, 1);
+  fill: rgba(255, 255, 255, 1);
+}
+* {
+  outline: 1px solid red;
+}
+.container .list-social {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer1 .link1 {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-background-color);
+}
+.footer1 .link1:hover,
+.footer1 .link1:focus {
+  background-color: rgba(33, 150, 243, 1);
+  fill: rgba(255, 255, 255, 1);
 }
